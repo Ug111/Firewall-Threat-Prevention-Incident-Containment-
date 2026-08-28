@@ -43,6 +43,15 @@ complementing my existing detection (Suricata/Splunk) and response (Incident Res
 | Kali        | eth0       | opnsense-lan | 192.168.10.15 |
 | Ubuntu      | enp0s3     | Victim_Zone  | 192.168.20.50 |
 
+## Firewall Policy
+Traffic originating from the attacker-side LAN towards the Ubuntu victim was initially permitted to establish
+a baseline. A subsequent firewall policy was introduced to restrict TCP/22 access to the victim, demonstrating
+network-level containment.
+
+## Baseline — Allowed
+
+TCP/22 connection from Kali to Ubuntu successfully established
+![Baseline-Allowed](
 
 ## Related Projects
 
