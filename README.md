@@ -47,6 +47,17 @@ with the firewall enforcing what traffic is permitted to cross that boundary.
 This lab demonstrates practical firewall configuration and network segmentation skills — core competencies for SOC and security operations roles, 
 complementing my existing detection (Suricata/Splunk) and response (Incident Response Playbook) work.
 
+## Network Configuration
+
+|Device       | Interface  | Network      |  IP           |
+
+| OPNsense    | WAN/em0    | NAT          | 10.0.2.15     |
+| OPNsense    | LAN/em1    | opnsense-lan | 192.168.10.1  |          |
+| OPNsense    | OPT1/em2   | victim_Zone  | 192.168.20.1  |
+| Kali        | eth0       | opnsense-lan | 192.168.10.15 |
+| Ubuntu      | enp0s3     | Victim_Zone  | 192.168.20.50 |
+
+
 ## Related Projects
 
 - [IDS-Threat-Detection-Lab](https://github.com/Ug111/IDS-Threat-Detection-Lab) — Network-based threat detection
