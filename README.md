@@ -49,8 +49,8 @@ complementing my existing detection (Suricata/Splunk) and response (Incident Res
 
 ## Network Configuration
 
-|Device       | Interface  | Network      |  IP           |
-
+| Device      | Interface  | Network      |  IP           |
+| ----------- | ---------- | ------------ | ------------  |
 | OPNsense    | WAN/em0    | NAT          | 10.0.2.15     |
 | OPNsense    | LAN/em1    | opnsense-lan | 192.168.10.1  |          |
 | OPNsense    | OPT1/em2   | victim_Zone  | 192.168.20.1  |
