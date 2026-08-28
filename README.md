@@ -51,7 +51,7 @@ network-level containment.
 ## Baseline — Allowed
 
 TCP/22 connection from Kali to Ubuntu successfully established
-![Baseline-Allowed](
+![Baseline-Allowed](Screenshot/Baseline_Allowed.png)
 
 ## Related Projects
 
