@@ -48,6 +48,12 @@ Traffic originating from the attacker-side LAN towards the Ubuntu victim was ini
 a baseline. A subsequent firewall policy was introduced to restrict TCP/22 access to the victim, demonstrating
 network-level containment.
 
+## Verification
+- Active host verification conducted via ICMP ping to the target machine ('192.168.20.15').
+- Successful service validation performed on critical target ports using Netcat banners ('nc -vz').
+- Final Nmap reconnaissance confirming open ports '21', '22', '139', and '445' are reachable across network segments.
+![Verification](Screenshot/lab_recon_results.png)
+
 ## Baseline — Allowed
 
 TCP/22 connection from Kali to Ubuntu successfully established
