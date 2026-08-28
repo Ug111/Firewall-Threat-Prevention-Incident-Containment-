@@ -55,8 +55,18 @@ TCP/22 connection from Kali to Ubuntu successfully established
 
 ## Containment — Blocked
 After applying the firewall block policy the same TCP/22 connection attempt was prevented
-[Containment-Blocked](Screenshot/Containment_Blocked.png)
+![Containment-Blocked](Screenshot/Containment_Blocked.png)
 
+## OPT1 Validation
+Successful connectivity between the protected victim zone and OPNsense OPT1 confirmed
+that the victim network was correctly routed through firewall
+![OPT1-Validation](Screenshot/OPT1_Validation.png)
+
+## Security Outcome
+The lab successfully demonstrated network segmentation and firewall-based containment.
+The attacker and victim systems were placed on separate networks, with OPNsense acting as the Layer-3
+security boundary. A controlled TCP/22 connection was first validated and subsequently blocked through
+firewall policy enforcement.
 ## Related Projects
 
 - [IDS-Threat-Detection-Lab](https://github.com/Ug111/IDS-Threat-Detection-Lab) — Network-based threat detection
