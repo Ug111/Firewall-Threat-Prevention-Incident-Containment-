@@ -53,6 +53,10 @@ network-level containment.
 TCP/22 connection from Kali to Ubuntu successfully established
 ![Baseline-Allowed](Screenshot/Baseline_Allowed.png)
 
+## Containment — Blocked
+After applying the firewall block policy the same TCP/22 connection attempt was prevented
+[Containment-Blocked](Screenshot/Containment_Blocked.png)
+
 ## Related Projects
 
 - [IDS-Threat-Detection-Lab](https://github.com/Ug111/IDS-Threat-Detection-Lab) — Network-based threat detection
