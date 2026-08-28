@@ -24,20 +24,6 @@ I built an isolated virtual security environment to simulate a segmented network
 - **VirtualBox** — Virtualization platform hosting all three machines
 - **Segmented Networks** — Separate attacker-side and victim-side network segments, with OPNsense positioned as the controlling boundary between them
 
-**Architecture Concept:**
-Kali
-192.168.10.15
-     │
-     │ opnsense-lan
-     ▼
-OPNsense
-LAN  192.168.10.1
-OPT1 192.168.20.1
-     │
-     │ Victim_Zone
-     ▼
-Ubuntu
-192.168.20.15
 
 This mirrors real-world network segmentation practices used in production environments — isolating untrusted/external-facing systems from protected internal assets, 
 with the firewall enforcing what traffic is permitted to cross that boundary.
