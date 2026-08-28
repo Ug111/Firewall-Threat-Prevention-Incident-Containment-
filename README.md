@@ -24,9 +24,7 @@ I built an isolated virtual security environment to simulate a segmented network
 - **VirtualBox** — Virtualization platform hosting all three machines
 - **Segmented Networks** — Separate attacker-side and victim-side network segments, with OPNsense positioned as the controlling boundary between them
 
-
-This mirrors real-world network segmentation practices used in production environments — isolating untrusted/external-facing systems from protected internal assets, 
-with the firewall enforcing what traffic is permitted to cross that boundary.
+This mirrors real-world network segmentation practices used in production environments — isolating untrusted/external-facing systems from protected internal assets, with the firewall enforcing what traffic is permitted to cross that boundary.
 
 ## Purpose
 
@@ -55,16 +53,15 @@ network-level containment.
 ![Verification](Screenshot/lab_recon_results.png)
 
 ## Baseline — Allowed
-
-TCP/22 connection from Kali to Ubuntu successfully established
+- TCP/22 connection from Kali to Ubuntu successfully established
 ![Baseline-Allowed](Screenshot/Baseline_Allowed.png)
 
 ## Containment — Blocked
-After applying the firewall block policy the same TCP/22 connection attempt was prevented
+- After applying the firewall block policy the same TCP/22 connection attempt was prevented
 ![Containment-Blocked](Screenshot/Containment_Blocked.png)
 
 ## OPT1 Validation
-Successful connectivity between the protected victim zone and OPNsense OPT1 confirmed
+- Successful connectivity between the protected victim zone and OPNsense OPT1 confirmed
 that the victim network was correctly routed through firewall
 ![OPT1-Validation](Screenshot/OPT1_Validation.png)
 
