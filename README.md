@@ -49,7 +49,8 @@ network-level containment.
 ## Verification
 - Active host verification conducted via ICMP ping to the target machine ('192.168.20.15').
 - Successful service validation performed on critical target ports using Netcat banners ('nc -vz').
-- Final Nmap reconnaissance confirming open ports '21', '22', '139', and '445' are reachable across network segments.
+- Nmap TCP reconnaissance against the Ubuntu victim identified exposed services on ports 21(FTP), 22(SSH), 139(NetBIOS/SMB),
+  and 445(SMB).
 ![Verification](Screenshot/lab_recon_results.png)
 
 ## Baseline — Allowed
@@ -66,10 +67,9 @@ that the victim network was correctly routed through firewall
 ![OPT1-Validation](Screenshot/OPT1_Validation.png)
 
 ## Security Outcome
-The lab successfully demonstrated network segmentation and firewall-based containment.
-The attacker and victim systems were placed on separate networks, with OPNsense acting as the Layer-3
-security boundary. A controlled TCP/22 connection was first validated and subsequently blocked through
-firewall policy enforcement.
+The lab demonstrated defense-in-depth through network segmentation, stateful firewall enforcement, network-based threat detection,
+and active containment. A controlled reconnaissance event was detected by Suricata, correlated with firewall telemetry, and subsequently p
+prevented through OPNsense policy enforcement.
 ## Related Projects
 
 - [IDS-Threat-Detection-Lab](https://github.com/Ug111/IDS-Threat-Detection-Lab) — Network-based threat detection
